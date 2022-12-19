@@ -1,2 +1,30 @@
-test
-22
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+
+<https://mariopetkovskii.github.io/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://mariopetkovskii.github.io/#me> ;
+  foaf:primaryTopic <https://mariopetkovskii.github.io/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://mariopetkovskii.github.io/#me>
+  a foaf:Person ;
+  foaf:name "Mario Petkovski" ;
+  foaf:title "Mr" ;
+  foaf:givenname "Mario" ;
+  foaf:family_name "Petkovski" ;
+  foaf:nick "Petko" ;
+  foaf:mbox_sha1sum "d5755a9f670f5a6cf236be860d0c9c8e01e203ad" ;
+  foaf:homepage <https://www.linkedin.com/in/mario-petkovski/> ;
+  foaf:phone <tel:38971000000> ;
+  foaf:schoolHomepage <https://finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Bisera Stojmanovska" ;
+    foaf:mbox_sha1sum "59d780eae0f0b046e6fc86f1d6fc52c785f002dd"
+  ], [
+    a foaf:Person ;
+    foaf:name "Jovana Mitrovikj" ;
+    foaf:mbox_sha1sum "0a8c36272e9cd544515b89c0c8f2c47dcce5315b"
+  ] .
